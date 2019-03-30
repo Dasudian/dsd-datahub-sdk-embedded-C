@@ -66,19 +66,6 @@ Ensure you understand the DSD IoT platform and create the necessary certificates
 
 In order to quickly get started with the DSD IoT platform, we have ported the SDK for POSIX type Operating Systems like Ubuntu, OS X and RHEL. The SDK is configured for the mbedTLS library and can be built out of the box with *GCC* using *make utility*. You'll need to download mbedTLS from the official ARMmbed repository. We recommend that you pick the latest version in order to have up-to-date security fixes.
 
-<h2>Sample APIs</h2>
-<p>Connecting to the DSD IoT MQTT platform</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;DSD_IoT_Client client;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;rc = dsd_iot_mqtt_init(&amp;client, &amp;iotInitParams);</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;rc = dsd_iot_mqtt_connect(&amp;client, &amp;iotConnectParams);</div>
-</div><!-- fragment --><p>Subscribe to a topic</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;DSD_IoT_Client client;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;rc = dsd_iot_mqtt_subscribe(&amp;client, &quot;sdkTest/sub&quot;, 11, QOS0, iot_subscribe_callback_handler, NULL);</div>
-</div><!-- fragment --><p>Update Thing Shadow from a device</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;rc = dsd_iot_shadow_update(&amp;mqttClient, DSD_IOT_MY_THING_NAME, pJsonDocumentBuffer, ShadowUpdateStatusCallback,</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;                            pCallbackContext, TIMEOUT_4SEC, persistenSubscription);</div>
-</div><!-- fragment --> </div></div>
-
 ## Installation
 This section explains the individual steps to retrieve the necessary files and be able to build your first application using the DSD IoT device SDK for embedded C.
 
