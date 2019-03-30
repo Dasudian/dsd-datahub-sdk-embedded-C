@@ -12,7 +12,7 @@
 
 The DSD IoT DataHub SDK for embedded C is a collection of C source files which can be used in embedded applications to securely connect to the [DSD IoT platform](https://dasudian.com/cn/service_iot.html). It includes transport clients **MQTT**, **TLS** implementations and examples for their use. It also supports DSD IoT specific features such as **Thing Shadow**. It is distributed in source form and intended to be built into customer firmware along with application code, other libraries and RTOS. For additional information about porting the Device SDK for embedded C onto additional platforms please refer to the [PortingGuide](https://github.com/Dasudian/dsd-datahub-sdk-embedded-C/blob/master/PortingGuide.md).
 
-快速启动基于本SDK的智能边缘计算节点，请参考本文最后一章[Sample APIs](#sample-apis)
+快速启动基于本SDK的智能边缘计算节点，请参考本文最后一章 [Sample APIs](#sample-apis)，或[应用示例](/samples)
 
 ## APIs
 <table class="doxtable">
